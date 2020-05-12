@@ -1,7 +1,11 @@
+![Build](https://github.com/kamiyaowl/rust_lib_for_arduino_example/workflows/Build/badge.svg)
+
 # Rust Library for Arduino
 
 Rustで作成したライブラリをArduino(ARM Cortex-M)で読み込んで利用するサンプルアプリケーションです。  
 Cortex-M0/Cortex-M0+/Cortex-M3/Cortex-M4F/Cortex-M7Fに対応しています。
+
+![screenshot](https://github.com/kamiyaowl/rust_lib_for_arduino_example/blob/master/screenshot/it_works.PNG?raw=true)
 
 ## ビルド方法
 
