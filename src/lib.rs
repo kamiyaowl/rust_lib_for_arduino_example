@@ -19,3 +19,12 @@ pub unsafe extern "C" fn example_add(a: u32, b: u32) -> u32 {
     a + b
 }
 
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        assert_eq!(3, example_add(1,2));
+    }
+}

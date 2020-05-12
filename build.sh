@@ -26,6 +26,7 @@ cp "./target/thumbv6m-none-eabi/release/lib$LIB_NAME.a"    "$DST_DIR/src/cortex-
 cp "./target/thumbv6m-none-eabi/release/lib$LIB_NAME.a"    "$DST_DIR/src/cortex-m0plus/"
 cp "./target/thumbv7m-none-eabi/release/lib$LIB_NAME.a"    "$DST_DIR/src/cortex-m3/"
 cp "./target/thumbv7em-none-eabihf/release/lib$LIB_NAME.a" "$DST_DIR/src/cortex-m4/" # for Cortex-M4F/M7F
+cp "./target/thumbv7em-none-eabihf/release/lib$LIB_NAME.a" "$DST_DIR/src/cortex-m7/" # for Cortex-M4F/M7F
 # cp "./target/thumbv7em-none-eabi/release/lib$LIB_NAME.a" "$DST_DIR/src/cortex-m4/" # for Cortex-M4/M7
 
 echo "copy $LIB_NAME.h"
