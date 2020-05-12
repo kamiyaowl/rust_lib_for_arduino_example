@@ -18,7 +18,7 @@ $ docker-compose run build
 $ ./build.sh
 ```
 
-ビルドが完了すると、`rust_lib_for_arduino_example.zip`が作成されるているのでArduino IDEにインストールします。
+ビルドが完了すると`rust_lib_for_arduino_example.zip`が作成されているので、Arduino IDEにインストールします。
 [Installing Additional Arduino Libraries - Arduino.cc](https://www.arduino.cc/en/guide/libraries)
 
 
@@ -27,7 +27,7 @@ $ ./build.sh
 ### Rustのビルド環境
 
 Rustのプロジェクト自体はno_stdの静的ライブラリとしてビルドされます。
-`lib.rs`で公開されている情報をC/C++から利用することができます。(公開したい関数はマングリングを割けるために`#[no_mangle]`を必ず明示してください)
+`lib.rs`で公開されている情報をC/C++から利用することができます。(公開したい関数はマングリングを避けるために`#[no_mangle]`を必ず明示してください)
 C/C++から利用するためのヘッダファイルを`cbindgen`を使ってビルド時に一緒に生成しています。
 
 ビルドターゲットはCPUごとに異なるため、`build.sh`で各ターゲットごとにビルドしています。
