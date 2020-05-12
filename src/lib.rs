@@ -18,3 +18,8 @@ pub extern "C" fn rust_eh_personality() {}
 pub unsafe extern "C" fn example_add(a: u32, b: u32) -> u32 {
     a + b
 }
+
+#[no_mangle]
+pub unsafe extern "C" fn example_add() -> &str {
+    "Hello Rust!"
+}
