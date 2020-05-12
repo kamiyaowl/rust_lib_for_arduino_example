@@ -1,0 +1,21 @@
+name: Build Libray
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy docker-compose
+      uses: hasnat/deploy-docker-compose@v0.1-alpha
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: rust_lib_for_arduino_example
+        path: rust_lib_for_arduino_example.zip
+      
