@@ -4,4 +4,6 @@ services:
       build: .
       volumes:
         - ./:/work
-      command: ./build.sh
+      command: >
+        bash -c "chmod +x ./build.sh &&
+        ./build.sh"
