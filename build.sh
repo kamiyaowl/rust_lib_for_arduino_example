@@ -11,6 +11,7 @@ mkdir "$DST_DIR/src/cortex-m0"
 mkdir "$DST_DIR/src/cortex-m0plus"
 mkdir "$DST_DIR/src/cortex-m3"
 mkdir "$DST_DIR/src/cortex-m4"
+mkdir "$DST_DIR/src/cortex-m7"
 
 echo "copy library.properties"
 cp "./library.properties" "$DST_DIR/"

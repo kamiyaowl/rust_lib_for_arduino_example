@@ -9,7 +9,7 @@ void loop() {
     // test
     const uint32_t dst = example_add(1,2);
     Serial.print("Hello Rust. 1+2=");
-    Serial.print;n(dst);
+    Serial.println(dst);
 
     delay(1000);
 }
