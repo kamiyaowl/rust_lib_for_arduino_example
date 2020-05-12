@@ -1,0 +1,7 @@
+version: "3"
+services:
+    build-arduino-lib:
+      build: .
+      volumes:
+        - ./:/work
+      command: ./build.sh
